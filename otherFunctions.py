@@ -5,3 +5,4 @@ def selectionSort(anArray):
             if anArray[i]["title"].lower() < anArray[minIndex]["title"].lower():
                 minIndex = i
         anArray[x], anArray[minIndex] = anArray[minIndex], anArray[x]
+
