@@ -161,11 +161,9 @@ def get_menu_selection():
     return input("Selection (1-2): ")
 
 def load_users():
-    try:
-        with open("users.json", "r") as file:
-            return json.load(file)
-    except FileNotFoundError:
-        return []
+    with open("users.json", "r") as file:
+        return json.load(file)
+ 
 
 def save_users(users):
     with open("users.json", "w") as file:
